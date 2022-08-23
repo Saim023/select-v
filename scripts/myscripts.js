@@ -1,29 +1,6 @@
 // // Selected Player Area
-// function players(playerText, playerBtn){
-//     const playerOl = document.getElementById("selected-players");
-//     const playerLi = document.createElement("li");
-//     playerLi.innerText = "";
-
-//     const getText = document.getElementById(playerText).innerText;
-//     playerLi.innerText = getText;
-//     playerOl.appendChild(playerLi);
-
-//     document.getElementById(playerBtn).disabled = (true);
-// }
-
 document.getElementById("razzak-btn").addEventListener("click", function(){
     players("razzak-text", "razzak-btn");
-    
-    // const playerOl = document.getElementById("selected-players");
-    // const playerLi = document.createElement("li");
-    // playerLi.innerText = "";
-
-    // const getText = document.getElementById("razzak-text").innerText;
-    // playerLi.innerText = getText;
-    // playerOl.appendChild(playerLi);
-
-    // const buttons = document.getElementById("razzak-btn");
-    // const disabledBtn = addToList(buttons);
 
 })
 
@@ -81,28 +58,3 @@ document.getElementById("ashraful-btn").addEventListener("click", function(){
     players("ashraful-text", "ashraful-btn");
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let buttonArey = [];
-// function addToList(element){
-//     if(element > 5 ){
-//         alert("Can't Select More Than Five!!")
-//     }
-//     else{
-//     element.disabled = true ;
-//     }
-// }

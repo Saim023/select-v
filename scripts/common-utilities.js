@@ -13,21 +13,30 @@ function players(playerText, playerBtn){
     document.getElementById(playerBtn).disabled = (true);
     document.getElementById(playerBtn).style.backgroundColor = "grey";
 
+    const player = document.getElementById("selected-players").childNodes.length;
 
-    // const playerLength = document.getElementById("selected-players");
-    // let player = playerLength.innerText;
-    // let getPlayer = playerArray.push(player);
-    // let getPlayerLength = playerArray.indexOf();
-    // let total = getPlayerLength;
+    if (player > 5){
+        alert("You Can't Select More Than Five!");
 
-    // for(i = 1; i >= 5; i++){
+    }
+    
+    else{
         
-    //     let sum = sum (total * 1000) ;
-       
-    // }
-
-    // console.log(sum);
-
-
-   
+    }
 }
+
+
+document.getElementById("calculate-btn").addEventListener("click", function(){
+    let player = document.getElementById("selected-players").childNodes.length;
+    const getInputString = document.getElementById("calculate-inpt").value;
+    const getInput = parseFloat(getInputString);
+    let total = (player - 1) * getInput;
+
+    const getExpense = document.getElementById("expense");
+    const getExpenseString = getExpense.innerText;
+    getExpense.innerText = total;
+    
+    
+    getExpenseString.innerText = total;
+    
+})
