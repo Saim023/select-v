@@ -58,3 +58,39 @@ document.getElementById("ashraful-btn").addEventListener("click", function(){
     players("ashraful-text", "ashraful-btn");
 
 })
+
+// Calculate Area
+document.getElementById("calculate-btn").addEventListener("click", function(){
+    let player = document.getElementById("selected-players").childNodes.length;
+    const getInputString = document.getElementById("calculate-inpt").value;
+    const getInput = parseFloat(getInputString);
+    let total = (player - 1) * getInput;
+
+    const getExpense = document.getElementById("expense");
+    const getExpenseString = getExpense.innerText;
+    getExpense.innerText = total;
+    
+    
+    getExpenseString.innerText = total;
+
+})
+
+document.getElementById("calculate-total").addEventListener("click", function(){
+    const getManagerValueString = document.getElementById("manager-cost").value;
+    const getManagerValue = parseFloat(getManagerValueString);
+
+    const getCoachValueString = document.getElementById("coach-cost").value;
+    const getCoachValue = parseFloat(getCoachValueString);
+
+    const getExpense = document.getElementById("expense");
+    const getExpenseString = getExpense.innerText;
+    const getExpenseValue = parseFloat(getExpenseString);
+    
+    const totalCost = getExpenseValue + getManagerValue + getCoachValue;
+    
+    const totalBalanceCost = document.getElementById("total-cost");
+    const totalBalanceCostString = totalBalanceCost.innerText;
+    totalBalanceCost.innerText = totalCost;
+
+    
+})
