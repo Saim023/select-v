@@ -75,22 +75,8 @@ document.getElementById("calculate-btn").addEventListener("click", function(){
 
 })
 
+
 document.getElementById("calculate-total").addEventListener("click", function(){
-    const getManagerValueString = document.getElementById("manager-cost").value;
-    const getManagerValue = parseFloat(getManagerValueString);
-
-    const getCoachValueString = document.getElementById("coach-cost").value;
-    const getCoachValue = parseFloat(getCoachValueString);
-
-    const getExpense = document.getElementById("expense");
-    const getExpenseString = getExpense.innerText;
-    const getExpenseValue = parseFloat(getExpenseString);
-    
-    const totalCost = getExpenseValue + getManagerValue + getCoachValue;
-    
-    const totalBalanceCost = document.getElementById("total-cost");
-    const totalBalanceCostString = totalBalanceCost.innerText;
-    totalBalanceCost.innerText = totalCost;
-
-    
+    totalCalculation()
+   
 })
