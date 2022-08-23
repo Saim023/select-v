@@ -1,15 +1,15 @@
-// Selected Player Area
-function players(playerText, playerBtn){
-    const playerOl = document.getElementById("selected-players");
-    const playerLi = document.createElement("li");
-    playerLi.innerText = "";
+// // Selected Player Area
+// function players(playerText, playerBtn){
+//     const playerOl = document.getElementById("selected-players");
+//     const playerLi = document.createElement("li");
+//     playerLi.innerText = "";
 
-    const getText = document.getElementById(playerText).innerText;
-    playerLi.innerText = getText;
-    playerOl.appendChild(playerLi);
+//     const getText = document.getElementById(playerText).innerText;
+//     playerLi.innerText = getText;
+//     playerOl.appendChild(playerLi);
 
-    document.getElementById(playerBtn).disabled = (true);
-}
+//     document.getElementById(playerBtn).disabled = (true);
+// }
 
 document.getElementById("razzak-btn").addEventListener("click", function(){
     players("razzak-text", "razzak-btn");
