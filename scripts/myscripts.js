@@ -1,27 +1,10 @@
-function getBestFive(playerId){
-   
-    const newElementValue = document.getElementById(playerId);
-
-    const newValue = newElementValue.innerText;
-
-    const playerOl = document.getElementById("selected-players");
-
-    const playerLi = document.createElement("li");
-    
-    playerOl.appendChild(playerLi);
-    
-    playerOl.innerText = newValue;
-
-    
-    
-}
-
-
+// Selected Player Area
 document.getElementById("razzak-btn").addEventListener("click", function(){
+    const playerOl = document.getElementById("selected-players");
+    const playerLi = document.createElement("li");
+    playerLi.innerText = "";
 
-    getBestFive("razzak-text");
-})
-
-document.getElementById("aftab-btn").addEventListener("click", function(){
-    getBestFive("aftab-text");
+    const getText = document.getElementById("razzak-text").innerText;
+    playerLi.innerText = getText;
+    playerOl.appendChild(playerLi);
 })
